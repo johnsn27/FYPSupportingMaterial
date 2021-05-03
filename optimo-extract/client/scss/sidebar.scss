@@ -1,0 +1,129 @@
+@import '../scss/gel';
+@import '../scss/variables';
+
+.checkmark {
+  display:inline-block;
+  width: 22px;
+  height:22px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.checkmark_circle {
+  position: absolute;
+  width:22px;
+  height:22px;
+  background-color: green;
+  border-radius:11px;
+  left:0;
+  top:0;
+}
+
+.checkmark_stem {
+  position: absolute;
+  width:3px;
+  height:9px;
+  background-color:#fff;
+  left:11px;
+  top:6px;
+}
+
+.checkmark_kick {
+  position: absolute;
+  width:3px;
+  height:3px;
+  background-color:#fff;
+  left:8px;
+  top:12px;
+}
+
+#redx {
+  background:red;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  margin:0;
+}
+
+#egassessment {
+  display: flex;
+  flex-wrap: wrap;
+  height:fit-content;
+}
+
+#reqtext {
+  flex: 2;
+  margin:0;
+}
+
+.sidebar {
+  width: 330px;
+  overflow: scroll;
+  min-height: 900px;
+  background-color: $grey-ultra-light;
+
+  &__open-btn.igm-btn {
+    position: fixed;
+    right: 3%;
+    bottom: 100px;
+    z-index: 10;
+    min-width: 33px;
+    background-color: $white;
+    
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: $grey;
+
+      .gel-icon svg {
+        fill: $white;
+      }
+    }
+  }
+
+  &__close.igm-btn {
+    float: right;
+    margin-top: 9px;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    min-width: unset;
+  
+    .sidebar__close-icon {
+      color: $tundora-grey;
+      width: 16px;
+      height: 16px;
+    }
+  
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: transparent;
+      
+      .sidebar__close-icon {
+        color: $grey-black;
+      }
+    }
+  }
+
+  &__context-bar {
+    height: 56px;
+    background-color: $white;
+    border-bottom: #d6d6d6 solid 1px;
+    border-top: #d6d6d6 solid 1px;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .sidebar {
+      display: none !important;
+  }
+
+  .igm-btn.sidebar__open-btn {
+    display: none;
+  }
+}
