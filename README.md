@@ -24,5 +24,5 @@ The system built is designed to work behind both a BBC Login and a BBC Developer
 The system will be demoed in full at the viva (as I have these credentials)
 
 ## Reason for not Including Entire Datasets
-The BBC Articles dataset contains 2000/10000 articles due to size constraints
-The BBC Articles with sentiment dataset contain 1/10000 due to a number of reasons including size constraints
+The BBC Articles dataset contains 2000/10000 articles due to size constraints. <br>
+The BBC Articles with sentiment dataset contain 1/10000 due to a number of reasons including size constraints.
